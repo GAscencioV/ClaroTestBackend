@@ -1,0 +1,76 @@
+@ClaroTestBackend.API_HostAddress = http://localhost:5228
+
+GET {{ClaroTestBackend.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+
+### 1. Obtener todos los libros
+GET {{ClaroTestBackend.API_HostAddress}}/api/Books
+Accept: application/json
+
+### 2. Obtener libro por ID
+GET {{ClaroTestBackend.API_HostAddress}}/api/Books/1
+Accept: application/json
+
+### 3. Crear nuevo libro
+POST {{ClaroTestBackend.API_HostAddress}}/api/Books
+Content-Type: application/json
+
+{
+  "title": "Clean Architecture in .NET",
+  "description": "Una guía completa sobre Clean Architecture y patrones de software.",
+  "pageCount": 350,
+  "excerpt": "Aislando el dominio de la infraestructura.",
+  "publishDate": "2026-10-28T00:00:00.000Z"
+}
+
+### 4. Actualizar libro existente
+PUT {{ClaroTestBackend.API_HostAddress}}/api/Books/1
+Content-Type: application/json
+
+{
+  "title": "Clean Architecture in .NET - 2nd Edition",
+  "description": "Edición actualizada y revisada.",
+  "pageCount": 400,
+  "excerpt": "Nuevos patrones y mejores prácticas.",
+  "publishDate": "2026-10-28T00:00:00.000Z"
+}
+
+### 5. Eliminar libro
+DELETE {{ClaroTestBackend.API_HostAddress}}/api/Books/1
+
+
+### ================= AUTHORS =================
+
+### 6. Obtener todos los autores
+GET {{ClaroTestBackend.API_HostAddress}}/api/Authors
+Accept: application/json
+
+### 7. Obtener autor por ID
+GET {{ClaroTestBackend.API_HostAddress}}/api/Authors/1
+Accept: application/json
+
+### 8. Crear nuevo autor
+POST {{ClaroTestBackend.API_HostAddress}}/api/Authors
+Content-Type: application/json
+
+{
+  "idBook": 1,
+  "firstName": "Raydelto",
+  "lastName": "Hernandez"
+}
+
+### 9. Actualizar autor existente
+PUT {{ClaroTestBackend.API_HostAddress}}/api/Authors/1
+Content-Type: application/json
+
+{
+  "idBook": 1,
+  "firstName": "Uncle",
+  "lastName": "Bob"
+}
+
+### 10. Eliminar autor
+DELETE {{ClaroTestBackend.API_HostAddress}}/api/Authors/1

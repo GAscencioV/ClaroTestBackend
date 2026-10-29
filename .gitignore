@@ -1,0 +1,21 @@
+## Compilación y binarios
+[Bb]in/
+[Oo]bj/
+out/
+
+## Visual Studio y VS Code
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+## Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+appsettings.Development.json

@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Core/">
+    <Project Path="ClaroTestBackend.Core.Application/ClaroTestBackend.Core.Application.csproj" />
+    <Project Path="ClaroTestBackend.Core.Domain/ClaroTestBackend.Core.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="ClaroTestBackend.Infrastructure.Persistence/ClaroTestBackend.Infrastructure.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/src/Presentation/">
+    <Project Path="ClaroTestBackend.API/ClaroTestBackend.API.csproj" />
+  </Folder>
+</Solution>
